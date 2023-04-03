@@ -1,1 +1,1 @@
-web: gunicron booking.wsgi
+web: gunicron openbooking.wsgi
