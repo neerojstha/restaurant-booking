@@ -1,3 +1,5 @@
 from django.shortcuts import render
+from django.contrib.auth.decorators import login_required
+from .models import Guest, Appointment, Table, Review, CouponCode
 
-# Create your views here.
+
