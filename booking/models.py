@@ -13,12 +13,16 @@ class Guest(models.Model):
 
 
 class Appointment(models.Model):
-   
+    name = models.CharField(max_length=255, verbose_name='Appointment Name')
     guest = models.ForeignKey(Guest, on_delete=models.CASCADE)
     date = models.DateField()
     time = models.IntegerField()
     number_of_people = models.IntegerField()
     table_number = models.IntegerField()
+    comments = models.TextField(null=True, blank=True)
+
+    def __str__(self):
+        return self.name
 
 class Table(models.Model):
     table_number = models.IntegerField(unique=True)
