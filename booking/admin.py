@@ -1,6 +1,11 @@
 from django.contrib import admin
-from .models import Appointment, Review, Menu
+from .models import Guest, Appointment, Review, Menu, Cancellation
 from django_summernote.admin import SummernoteModelAdmin
+
+
+@admin.register(Guest)
+class GuestAdmin(admin.ModelAdmin):
+    pass
 
 @admin.register(Appointment)
 class AppointmentAdmin(SummernoteModelAdmin):
@@ -22,5 +27,9 @@ class ReviewAdmin(admin.ModelAdmin):
     search_fields = ('name', 'email', 'body')
     
 
-
+@admin.register(Cancellation)
+class CancellationAdmin(admin.ModelAdmin):
+    list_display = ('name', 'date', 'reason')
+    list_filter = ('date', 'email')
+    search_fields = ('reason', 'email')
 
