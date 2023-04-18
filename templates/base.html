@@ -18,7 +18,6 @@
     </script>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
-</head>
 
 <body class="d-flex flex-column h-100 main-bg">
 
@@ -33,13 +32,13 @@
           <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Menu</a>
+                <a class="nav-link" href="{% url 'menu' %}">Menu</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Appointment</a>
+                <a class="nav-link" href="{% url 'appointment' %}">Appointment</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Contact Us</a>
@@ -52,20 +51,17 @@
         </div>
       </nav>
 
-    <main class="flex-shrink-0 main-bg">
+      <section class="flex-shrink-0 main-bg">
         {% block content %}
         <!-- Content Goes here -->
-        <!-- Hero -->
-        <div class="jumbotron hero-image">
-            <h1 class="display-4">Welcome to My Website</h1>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare, lorem ac volutpat fermentum, felis nibh aliquet arcu, in mollis purus libero eget lorem.</p>
-            <hr class="my-4">
-            <p>Find out more about what we offer.</p>
-            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        <div class="container-fluid">
+          <div class="hero-image">
+            <img src="{% static 'images/hero.jpg' %}" alt="Hero Image">
           </div>
-        <!-- Hero -->
+        </div>
+       
         {% endblock content %}
-    </main>
+        </section>
 
     <!-- Footer -->
     <footer class="footer mt-auto py-3 dark-bg">
