@@ -1,6 +1,11 @@
 from django.contrib import admin
-from .models import Guest, Appointment, Review, Menu, Cancellation
+from .models import Post, Guest, Appointment, Review, Menu, Cancellation, Table
 from django_summernote.admin import SummernoteModelAdmin
+
+
+@admin.register(Post)
+class PostAdmin(admin.ModelAdmin):
+    pass
 
 
 @admin.register(Guest)
@@ -9,8 +14,12 @@ class GuestAdmin(admin.ModelAdmin):
 
 @admin.register(Appointment)
 class AppointmentAdmin(SummernoteModelAdmin):
+    pass
 
-    summernote_fields = ('comments')
+
+@admin.register(Table)
+class TableAdmin(admin.ModelAdmin):
+    pass
 
 
 @admin.register(Menu)
