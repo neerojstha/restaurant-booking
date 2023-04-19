@@ -13,7 +13,7 @@ class GuestAdmin(admin.ModelAdmin):
     pass
 
 @admin.register(Appointment)
-class AppointmentAdmin(SummernoteModelAdmin):
+class AppointmentAdmin(admin.ModelAdmin):
     pass
 
 

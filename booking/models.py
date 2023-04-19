@@ -33,7 +33,7 @@ class Appointment(models.Model):
     date = models.DateField()
     time = models.IntegerField()
     number_of_people = models.IntegerField()
-    table_number = models.IntegerField()
+    
     email = models.EmailField(null=True, blank=True)
     comments = models.TextField(null=True, blank=True)
 

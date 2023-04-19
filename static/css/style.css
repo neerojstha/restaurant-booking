@@ -38,18 +38,8 @@ body {
     position: relative;
 }
 
-.image-flash {
-    position: absolute;
-    bottom: 5%;
-    min-width: 30%;
-    left: -2px;
-    background-color: #23BBBB;
-}
-
-.author {
-    color: white;
-    margin: 4px;
-    text-transform: uppercase;
+.header {
+    text-align: center;
 }
 
 .masthead {
@@ -57,7 +47,7 @@ body {
     overflow: hidden;
     position: relative;
     display: inline-block;
-    height: 33vh;
+    height: 40vh;
     width: 100%;
 }
 
@@ -65,61 +55,20 @@ body {
     background-color: #445261;
     color: white;
     position: relative;
+
 }
 
-.masthead-image {
-    position: relative;
-    overflow: hidden;
+
+
+
+
+.site-heading {
+    color: red;
+    font-size: xxxlarge;
 }
 
-.masthead-image:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 90%;
-    height: 100%;
-    width: 150%;
-    background: #445261;
-    -webkit-transform: skew(15deg);
-    -moz-transform: skew(15deg);
-    transform: skew(15deg);
-    z-index: 100;
-}
-
-.post-link {
-    text-decoration: none;
-    color: #445261;
-}
-
-.post-link:hover,
-.page-link {
-    color: #E84610;
-}
-
-.post-title {
-    margin-top: 20%;
-    margin-left: 5%;
-}
-
-.post-subtitle {
-    margin-left: 5%;
-    color: lightgray;
-}
-
-.btn-signup {
-    background-color: #23BBBB;
-    color: #fff;
-}
-
-.btn-signup:hover,
-.btn-signup:active {
-    background-color: #fff;
-    color: #23BBBB;
-}
-
-.link {
-    color: #23BBBB;
-    text-decoration: none;
+.subheading {
+    font-size: x-large;
 }
 
 .link:hover,
@@ -140,19 +89,3 @@ body {
     background: transparent;
     border: none;
 }
-.hero-image {
-    width: 100%;
-    height: 400px;
-    background-color: #f2f2f2;
-    background-image: url('/static/images/hero.jpg');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .hero-image img {
-    max-width: 100%;
-    max-height: 100%;
-  }
