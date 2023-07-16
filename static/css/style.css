@@ -38,16 +38,26 @@ body {
     position: relative;
 }
 
-.header {
-    text-align: center;
+.image-flash {
+    position: absolute;
+    bottom: 5%;
+    min-width: 30%;
+    left: -2px;
+    background-color: #23BBBB;
+}
+
+.author {
+    color: white;
+    margin: 4px;
+    text-transform: uppercase;
 }
 
 .masthead {
-    margin-top: 15px;
+    margin-top: 10px;
     overflow: hidden;
     position: relative;
     display: inline-block;
-    height: 30vh;
+    height: 33vh;
     width: 100%;
 }
 
@@ -55,20 +65,61 @@ body {
     background-color: #445261;
     color: white;
     position: relative;
-
 }
 
-
-
-
-
-.site-heading {
-    color: red;
-    font-size: xxxlarge;
+.masthead-image {
+    position: relative;
+    overflow: hidden;
 }
 
-.subheading {
-    font-size: x-large;
+.masthead-image:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 90%;
+    height: 100%;
+    width: 150%;
+    background: #445261;
+    -webkit-transform: skew(15deg);
+    -moz-transform: skew(15deg);
+    transform: skew(15deg);
+    z-index: 100;
+}
+
+.post-link {
+    text-decoration: none;
+    color: #445261;
+}
+
+.post-link:hover,
+.page-link {
+    color: #E84610;
+}
+
+.post-title {
+    margin-top: 20%;
+    margin-left: 5%;
+}
+
+.post-subtitle {
+    margin-left: 5%;
+    color: lightgray;
+}
+
+.btn-signup {
+    background-color: #23BBBB;
+    color: #fff;
+}
+
+.btn-signup:hover,
+.btn-signup:active {
+    background-color: #fff;
+    color: #23BBBB;
+}
+
+.link {
+    color: #23BBBB;
+    text-decoration: none;
 }
 
 .link:hover,
@@ -127,3 +178,21 @@ body {
     margin-top: 10px;
     font-weight: bold;
   }  
+
+  .cafe-image {
+    max-width: 100%;
+    height: 50vh;
+    margin-bottom: 20px;
+  }
+  
+  .appointment-form {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+  }
+
+  .logo-image {
+    height: 75%; /* Adjust the height as needed */
+    width: 125px; /* Preserve the aspect ratio */
+    margin-right: 10px; /* Add some spacing to the right */
+}

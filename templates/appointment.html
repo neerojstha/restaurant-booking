@@ -4,8 +4,11 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-sm-8">
+        <div class="text-center">
+          <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y2FmZXxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80" alt="Cafe Image" class="img-fluid cafe-image">
+        </div>
         <h1 class="text-center">Book Appointment</h1>
-        <form method="post" class="my-4">
+        <form method="post" class="my-4 appointment-form">
           {% csrf_token %}
           <div class="form-group">
             <label for="name">Name:</label>
@@ -37,3 +40,4 @@
     </div>
   </div>
 {% endblock %}
+
