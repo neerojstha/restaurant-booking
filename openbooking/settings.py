@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['open-booking.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['8000-neerojstha-restaurantbo-e9c0pnkb4sf.ws-eu101.gitpod.io', 'localhost']
 
 
 

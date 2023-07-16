@@ -43,11 +43,11 @@ body {
 }
 
 .masthead {
-    margin-top: 10px;
+    margin-top: 15px;
     overflow: hidden;
     position: relative;
     display: inline-block;
-    height: 40vh;
+    height: 30vh;
     width: 100%;
 }
 
@@ -89,3 +89,41 @@ body {
     background: transparent;
     border: none;
 }
+.hero-image {
+    background-image: url(https://getwallpapers.com/wallpaper/full/1/a/a/1112748-free-download-cafe-wallpaper-1920x1200.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+.container {
+    padding: 20px;
+  }
+  
+  .coffee-item {
+    margin-bottom: 20px;
+  }
+  
+  .coffee-item img {
+    width: 100%;
+    max-height: 200px;
+  }
+  
+  .coffee-item h4 {
+    margin-top: 10px;
+    font-weight: bold;
+  }  

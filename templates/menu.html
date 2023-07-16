@@ -5,14 +5,22 @@
 {% endblock %}
 
 {% block content %}
-<div class="mx-auto d-block" style="width: 80%; margin-top: 50px; text-align: center;">
+<div class="container text-center mt-5">
     <h1>Our Menu</h1>
-   
-    {% for item in items %}
-        <li>{{ item.name }} - {{ item.price }}</li>
-    {% empty %}
-        <li>No items available.</li>
-    {% endfor %}
-    
+    <div class="row justify-content-center mt-4">
+        <div class="col-md-6">
+            {% if items %}
+                <ul class="list-group">
+                    {% for item in items %}
+                        <li class="list-group-item">{{ item.name }} - {{ item.price }}</li>
+                    {% empty %}
+                        <li class="list-group-item">No items available.</li>
+                    {% endfor %}
+                </ul>
+            {% else %}
+                <p>No items available.</p>
+            {% endif %}
+        </div>
+    </div>
 </div>
 {% endblock %}

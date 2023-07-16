@@ -29,13 +29,12 @@ class Post(models.Model):
 
 
 class Appointment(models.Model):
-    name = models.CharField(max_length=255, verbose_name='Appointment Name', null=True, blank=True)
+    name = models.CharField(max_length=255)
+    email = models.EmailField()
     date = models.DateField()
-    time = models.IntegerField()
+    time = models.TimeField()
     number_of_people = models.IntegerField()
-    
-    email = models.EmailField(null=True, blank=True)
-    comments = models.TextField(null=True, blank=True)
+    comments = models.TextField(blank=True)
 
     def __str__(self):
         return self.name
