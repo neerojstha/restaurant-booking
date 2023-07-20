@@ -37,3 +37,6 @@ def guest_new(request):
     else:
         form = GuestForm()
     return render(request, 'guest_edit.html', {'form': form})
+
+def contact(request):
+    return render(request, 'contact.html')    
