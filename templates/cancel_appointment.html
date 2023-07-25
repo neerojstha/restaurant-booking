@@ -1,0 +1,11 @@
+<!-- cancel_appointment.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Cancel Appointment</h1>
+  <p>Are you sure you want to cancel the appointment for {{ appointment.date }} at {{ appointment.time }}?</p>
+  <form method="post">
+    {% csrf_token %}
+    <input type="submit" value="Yes, Cancel Appointment">
+  </form>
+{% endblock %}

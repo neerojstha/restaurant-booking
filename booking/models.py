@@ -35,6 +35,7 @@ class Appointment(models.Model):
     time = models.TimeField()
     number_of_people = models.IntegerField()
     comments = models.TextField(blank=True)
+    canceled = models.BooleanField(default=False)
 
     def __str__(self):
         return self.name

@@ -2,6 +2,8 @@ from django.shortcuts import render, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from django.views import generic, View
 from .models import Post, Guest, Appointment, Review, Menu, Cancellation
+from .forms import AppointmentForm
+
 
 
 
@@ -13,8 +15,13 @@ class PostList(generic.ListView):
 
 def appointment(request):
     if request.method == 'POST':
-        print(request.POST)
-    return render(request, 'appointment.html')
+        form = AppointmentForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('home')  # Redirect to the home page after successful form submission
+    else:
+        form = AppointmentForm()
+    return render(request, 'appointment.html', {'form': form})
 
 def menu(request):
     items = Menu.objects.all()

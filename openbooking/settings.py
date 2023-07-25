@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-neerojstha-restaurantbo-9e3ysb03c02.ws-eu102.gitpod.io', 'localhost']
+ALLOWED_HOSTS = ['8000-neerojstha-restaurantbo-lnby17gkfb2.ws-eu102.gitpod.io', 'localhost']
 
 
 
