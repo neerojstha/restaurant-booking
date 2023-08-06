@@ -1,4 +1,4 @@
-Certainly! Below is the updated README page with an "Debug" section to provide information on how to debug the Cafe Soul Website in case of any issues:
+
 
 # Cafe Soul Website
 
